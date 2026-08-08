@@ -1,0 +1,371 @@
+/* =========================================
+   CHECK-IN PAGE
+========================================= */
+
+.checkin-container{
+
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.checkin-header{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+
+
+.checkin-header h1{
+
+    font-size:32px;
+    color:#0F172A;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-bottom:12px;
+
+}
+
+
+
+.checkin-header h1 i{
+
+    color:#4F46E5;
+
+}
+
+
+
+.checkin-header p{
+
+    color:#64748B;
+    font-size:16px;
+
+}
+
+
+
+
+
+/* =========================================
+   FORM
+========================================= */
+
+
+.checkin-form{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.form-group label{
+
+    font-weight:600;
+    color:#334155;
+    margin-bottom:10px;
+
+}
+
+
+
+
+/* =========================================
+   MOOD SECTION
+========================================= */
+
+
+.mood-options{
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+
+}
+
+
+
+.mood-btn{
+
+    background:#F8FAFC;
+    border:2px solid #E2E8F0;
+    padding:18px 10px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+    text-align:center;
+
+}
+
+
+
+.mood-btn:hover{
+
+    border-color:#4F46E5;
+    background:#EEF2FF;
+    transform:translateY(-5px);
+
+}
+
+
+
+.mood-btn.active{
+
+    background:#4F46E5;
+    border-color:#4F46E5;
+    color:white;
+
+}
+
+
+
+.mood-btn span{
+
+    display:block;
+    font-size:32px;
+    margin-bottom:8px;
+
+}
+
+
+
+.mood-btn p{
+
+    font-size:14px;
+    font-weight:500;
+
+}
+
+
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+
+input,
+select,
+textarea{
+
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #CBD5E1;
+    font-size:15px;
+
+}
+
+
+
+textarea{
+
+    resize:none;
+    min-height:130px;
+
+}
+
+
+
+
+/* =========================================
+   RANGE SLIDER
+========================================= */
+
+
+.range-value{
+
+    text-align:right;
+    color:#4F46E5;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+
+
+input[type="range"]{
+
+    accent-color:#4F46E5;
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+
+.save-btn{
+
+    margin-top:10px;
+    background:#4F46E5;
+    color:white;
+    padding:16px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+
+
+.save-btn:hover{
+
+    background:#3730A3;
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+
+.success-box{
+
+    display:none;
+    margin-top:20px;
+    padding:16px;
+    border-radius:12px;
+    background:#DCFCE7;
+    color:#166534;
+    text-align:center;
+    font-weight:600;
+
+}
+
+
+
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+
+.dark-mode .checkin-container{
+
+    background:#1E293B;
+
+}
+
+
+
+.dark-mode .checkin-header h1{
+
+    color:white;
+
+}
+
+
+
+.dark-mode .checkin-header p,
+.dark-mode .form-group label{
+
+    color:#CBD5E1;
+
+}
+
+
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea{
+
+    background:#334155;
+    color:white;
+    border-color:#475569;
+
+}
+
+
+
+.dark-mode .mood-btn{
+
+    background:#334155;
+    color:white;
+    border-color:#475569;
+
+}
+
+
+
+.dark-mode .mood-btn:hover{
+
+    background:#475569;
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+
+@media(max-width:768px){
+
+
+.checkin-container{
+
+    margin:20px;
+    padding:25px;
+
+}
+
+
+
+.checkin-header h1{
+
+    font-size:26px;
+
+}
+
+
+
+.mood-options{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}

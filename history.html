@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>History | Student Well-Being Monitor</title>
+
+    <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/history.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="history-container">
+
+    <div class="history-header">
+
+        <div>
+
+            <h1>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                Daily Check-In History
+            </h1>
+
+            <p>
+                View, search and manage all your previous well-being records.
+            </p>
+
+        </div>
+
+        <a href="dashboard.html" class="backBtn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Dashboard
+
+        </a>
+
+    </div>
+
+    <div class="history-controls">
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="🔍 Search by date or mood">
+
+        <select id="filterMood">
+
+            <option value="All">All Moods</option>
+
+            <option value="😊 Happy">😊 Happy</option>
+
+            <option value="🙂 Good">🙂 Good</option>
+
+            <option value="😐 Neutral">😐 Neutral</option>
+
+            <option value="😟 Stressed">😟 Stressed</option>
+
+            <option value="😞 Sad">😞 Sad</option>
+
+        </select>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Mood</th>
+
+                    <th>Stress</th>
+
+                    <th>Sleep</th>
+
+                    <th>Study</th>
+
+                    <th>Motivation</th>
+
+                    <th>Risk</th>
+
+                    <th>Delete</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="historyTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/burnout.js"></script>
+<script src="js/history.js"></script>
+
+</body>
+
+</html>
