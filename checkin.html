@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -374,4 +375,382 @@ motivationValue.textContent = motivation.value;
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Check-In | Student Well-Being Monitor</title>
+
+
+<link rel="stylesheet" href="css/common.css">
+
+<link rel="stylesheet" href="css/checkin.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="checkin-container">
+
+
+
+<div class="checkin-header">
+
+
+<h1>
+<i class="fa-solid fa-clipboard-check"></i>
+Daily Well-Being Check-In
+</h1>
+
+
+<p>
+Track your mood, stress, sleep and daily routine.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<form class="checkin-form" id="checkinForm">
+
+
+
+
+
+<div class="form-group">
+
+<label>
+How is your mood today?
+</label>
+
+
+<div class="mood-options">
+
+
+<button type="button" class="mood-btn" data-value="😊 Happy">
+
+<span>😊</span>
+<p>Happy</p>
+
+</button>
+
+
+
+<button type="button" class="mood-btn" data-value="🙂 Good">
+
+<span>🙂</span>
+<p>Good</p>
+
+</button>
+
+
+
+<button type="button" class="mood-btn" data-value="😐 Neutral">
+
+<span>😐</span>
+<p>Neutral</p>
+
+</button>
+
+
+
+<button type="button" class="mood-btn" data-value="😟 Stressed">
+
+<span>😟</span>
+<p>Stressed</p>
+
+</button>
+
+
+
+<button type="button" class="mood-btn" data-value="😞 Sad">
+
+<span>😞</span>
+<p>Sad</p>
+
+</button>
+
+
+
+</div>
+
+
+<input type="hidden" id="mood" required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Stress Level (1-10)
+</label>
+
+
+<div class="range-value">
+
+<span id="stressValue">5</span>/10
+
+</div>
+
+
+<input 
+type="range"
+id="stress"
+min="1"
+max="10"
+value="5">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Sleep Duration (Hours)
+</label>
+
+
+<input
+type="number"
+id="sleep"
+min="0"
+max="24"
+placeholder="Example: 7"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Study Hours
+</label>
+
+
+<input
+type="number"
+id="study"
+min="0"
+max="24"
+placeholder="Example: 5"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Motivation Level (1-10)
+</label>
+
+
+<div class="range-value">
+
+<span id="motivationValue">5</span>/10
+
+</div>
+
+
+<input
+type="range"
+id="motivation"
+min="1"
+max="10"
+value="5">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Additional Notes
+</label>
+
+
+<textarea 
+id="notes"
+placeholder="Write anything about your day..."></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+
+<button class="save-btn" type="submit">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Check-In
+
+</button>
+
+
+
+
+
+
+<div class="success-box" id="successBox">
+
+Your check-in has been saved successfully!
+
+</div>
+
+
+
+
+
+</form>
+
+
+
+
+</div>
+
+
+
+
+<script src="js/checkin.js"></script>
+
+
+<script>
+
+
+// Mood selection
+
+const moodButtons = document.querySelectorAll(".mood-btn");
+
+const moodInput = document.getElementById("mood");
+
+
+moodButtons.forEach(button=>{
+
+
+button.addEventListener("click",()=>{
+
+
+moodButtons.forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+
+button.classList.add("active");
+
+
+moodInput.value = button.dataset.value;
+
+
+});
+
+
+});
+
+
+
+
+// Range values
+
+
+const stress = document.getElementById("stress");
+
+const stressValue = document.getElementById("stressValue");
+
+
+stress.addEventListener("input",()=>{
+
+stressValue.textContent = stress.value;
+
+});
+
+
+
+
+const motivation = document.getElementById("motivation");
+
+const motivationValue = document.getElementById("motivationValue");
+
+
+motivation.addEventListener("input",()=>{
+
+motivationValue.textContent = motivation.value;
+
+});
+
+
+</script>
+
+
+
+</body>
+
+>>>>>>> befa5228fe320cf50f4d98e225596799a9357442
 </html>

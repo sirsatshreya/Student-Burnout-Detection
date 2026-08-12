@@ -1,0 +1,588 @@
+/* ===============================
+   DASHBOARD LAYOUT
+================================ */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+.sidebar{
+
+    width:260px;
+    background:#4F46E5;
+    color:white;
+    padding:25px 20px;
+    position:fixed;
+    height:100vh;
+    left:0;
+    top:0;
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:35px;
+
+}
+
+
+.logo i{
+
+    font-size:32px;
+
+}
+
+
+.logo h2{
+
+    font-size:20px;
+    font-weight:600;
+
+}
+
+
+
+.sidebar ul{
+
+    list-style:none;
+    padding:0;
+
+}
+
+
+.sidebar li{
+
+    margin:12px 0;
+
+}
+
+
+.sidebar a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px 15px;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:.3s;
+    font-size:15px;
+
+}
+
+
+.sidebar a:hover,
+.sidebar .active a{
+
+    background:rgba(255,255,255,0.18);
+
+}
+
+
+
+.sidebar i{
+
+    width:20px;
+
+}
+
+
+
+.logout-box{
+
+    position:absolute;
+    bottom:30px;
+    width:calc(100% - 40px);
+
+}
+
+
+.logout-box button{
+
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#4F46E5;
+    font-weight:600;
+    cursor:pointer;
+
+}
+
+
+
+.logout-box i{
+
+    margin-right:10px;
+
+}
+
+
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+
+
+.content{
+
+    margin-left:260px;
+    padding:35px;
+    width:calc(100% - 260px);
+    background:#F8FAFC;
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+   TOPBAR
+================================ */
+
+
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+
+}
+
+
+.topbar h1{
+
+    font-size:32px;
+    color:#0F172A;
+
+}
+
+
+.topbar p{
+
+    color:#64748B;
+    margin-top:8px;
+
+}
+
+
+
+#themeBtn{
+
+    padding:12px 22px;
+    border:none;
+    border-radius:12px;
+    background:#4F46E5;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+
+}
+
+
+
+
+
+/* ===============================
+   PROFILE CARD
+================================ */
+
+
+.profile-card{
+
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    margin-bottom:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.profile-title{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+
+}
+
+
+.profile-title h2{
+
+    color:#0F172A;
+    font-size:26px;
+
+}
+
+
+.profile-title i{
+
+    font-size:35px;
+    color:#4F46E5;
+
+}
+
+
+
+.profile-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+
+
+.profile-item{
+
+    background:#F8FAFC;
+    padding:22px;
+    border-radius:15px;
+    border-left:5px solid #4F46E5;
+
+}
+
+
+.profile-item span{
+
+    color:#64748B;
+    font-size:14px;
+
+}
+
+
+.profile-item h3{
+
+    margin-top:10px;
+    color:#0F172A;
+    font-size:18px;
+
+}
+
+
+
+.profile-actions{
+
+    margin-top:25px;
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+
+
+.editBtn{
+
+    background:#4F46E5;
+    color:white;
+    padding:13px 25px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+
+}
+
+
+.editBtn:hover{
+
+    background:#3730A3;
+
+}
+
+
+
+
+/* ===============================
+   DASHBOARD CARDS
+================================ */
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card::before{
+
+    content:"";
+    height:5px;
+    width:100%;
+    background:#4F46E5;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+
+
+.card i{
+
+    font-size:35px;
+    color:#4F46E5;
+    margin-bottom:15px;
+
+}
+
+
+
+.card h3{
+
+    color:#1E293B;
+    margin-bottom:10px;
+
+}
+
+
+
+.card p{
+
+    color:#64748B;
+
+}
+
+
+
+
+
+/* ===============================
+   SUMMARY SECTION
+================================ */
+
+
+.summary-section{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+}
+
+
+
+.summary-card{
+
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.summary-card h2{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#0F172A;
+    font-size:21px;
+    margin-bottom:20px;
+
+}
+
+
+
+.summary-card h2 i{
+
+    color:#4F46E5;
+
+}
+
+
+
+.summary-card p{
+
+    color:#64748B;
+    line-height:1.7;
+
+}
+
+
+
+
+/* ===============================
+   DARK MODE
+================================ */
+
+
+.dark-mode .content{
+
+    background:#0F172A;
+
+}
+
+
+.dark-mode .profile-card,
+.dark-mode .card,
+.dark-mode .summary-card{
+
+    background:#1E293B;
+
+}
+
+
+
+.dark-mode .topbar h1,
+.dark-mode .profile-title h2,
+.dark-mode .profile-item h3,
+.dark-mode .card h3,
+.dark-mode .summary-card h2{
+
+    color:white;
+
+}
+
+
+
+.dark-mode .profile-item{
+
+    background:#334155;
+
+}
+
+
+.dark-mode .profile-item span,
+.dark-mode .card p,
+.dark-mode .summary-card p,
+.dark-mode .topbar p{
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+    width:80px;
+
+}
+
+
+.logo h2{
+
+    display:none;
+
+}
+
+
+.sidebar a{
+
+    justify-content:center;
+
+}
+
+
+.sidebar a{
+
+    font-size:0;
+
+}
+
+
+.sidebar i{
+
+    font-size:20px;
+
+}
+
+
+.content{
+
+    margin-left:80px;
+    width:calc(100% - 80px);
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.content{
+
+    padding:20px;
+
+}
+
+
+.topbar{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+
+}
+
+
+.profile-grid,
+.cards,
+.summary-section{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
