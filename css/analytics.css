@@ -1,0 +1,435 @@
+/* =========================================
+   ANALYTICS PAGE
+========================================= */
+
+
+.analytics-container{
+
+    padding:35px;
+    min-height:100vh;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.analytics-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    flex-wrap:wrap;
+    gap:20px;
+
+}
+
+
+
+.analytics-header h1{
+
+    font-size:32px;
+    color:#0F172A;
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+
+
+.analytics-header h1 i{
+
+    color:#4F46E5;
+
+}
+
+
+
+.analytics-header p{
+
+    color:#64748B;
+    margin-top:8px;
+
+}
+
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+
+.backBtn{
+
+    background:#4F46E5;
+    color:white;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+
+
+.backBtn:hover{
+
+    background:#3730A3;
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* =========================================
+   STAT CARDS
+========================================= */
+
+
+.stats-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+
+
+.stat-card{
+
+    background:white;
+    padding:30px 25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.stat-card::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#4F46E5;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-7px);
+
+}
+
+
+
+.stat-card i{
+
+    font-size:38px;
+    color:#4F46E5;
+    margin-bottom:18px;
+
+}
+
+
+
+.stat-card h3{
+
+    color:#64748B;
+    font-size:15px;
+    margin-bottom:12px;
+
+}
+
+
+
+.stat-card h2{
+
+    font-size:32px;
+    color:#0F172A;
+
+}
+
+
+
+
+
+/* =========================================
+   CHART SECTION
+========================================= */
+
+
+.chart-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    gap:25px;
+
+}
+
+
+
+.chart-card{
+
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+
+
+.chart-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.chart-card h3{
+
+    font-size:21px;
+    color:#0F172A;
+    margin-bottom:25px;
+
+}
+
+
+
+.chart-card canvas{
+
+    width:100% !important;
+    height:300px !important;
+
+}
+
+
+
+
+
+/* =========================================
+   INSIGHTS
+========================================= */
+
+
+.insight-box{
+
+    margin-top:35px;
+    background:white;
+    border-left:6px solid #4F46E5;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.insight-box h3{
+
+    color:#0F172A;
+    margin-bottom:15px;
+
+}
+
+
+
+.insight-box p{
+
+    color:#64748B;
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+
+.progress-box{
+
+    margin-top:25px;
+
+}
+
+
+
+.progress-title{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+
+}
+
+
+
+.progress{
+
+    height:12px;
+    width:100%;
+    background:#E2E8F0;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+
+
+.progress-fill{
+
+    height:100%;
+    width:0%;
+    background:#4F46E5;
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+
+.dark-mode .analytics-container{
+
+    background:#0F172A;
+
+}
+
+
+
+.dark-mode .stat-card,
+.dark-mode .chart-card,
+.dark-mode .insight-box{
+
+    background:#1E293B;
+
+}
+
+
+
+.dark-mode .stat-card h2,
+.dark-mode .chart-card h3,
+.dark-mode .insight-box h3,
+.dark-mode .analytics-header h1{
+
+    color:white;
+
+}
+
+
+
+.dark-mode .stat-card h3,
+.dark-mode .analytics-header p,
+.dark-mode .insight-box p{
+
+    color:#CBD5E1;
+
+}
+
+
+
+.dark-mode .progress{
+
+    background:#334155;
+
+}
+
+
+
+.dark-mode .stat-card::before{
+
+    background:#818CF8;
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+
+@media(max-width:768px){
+
+
+.analytics-container{
+
+    padding:20px;
+
+}
+
+
+
+.analytics-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+
+}
+
+
+
+.chart-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.chart-card{
+
+    overflow-x:auto;
+
+}
+
+
+
+.analytics-header h1{
+
+    font-size:26px;
+
+}
+
+
+
+.stat-card h2{
+
+    font-size:28px;
+
+}
+
+
+}

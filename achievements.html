@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Achievements | Student Well-Being Monitor</title>
+
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="achievements.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-brain"></i>
+
+<h2>Well-Being Monitor</h2>
+
+</div>
+
+
+<ul>
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="checkin.html">
+<i class="fa-solid fa-clipboard-check"></i>
+Daily Check-In
+</a>
+</li>
+
+
+<li>
+<a href="history.html">
+<i class="fa-solid fa-clock-rotate-left"></i>
+History
+</a>
+</li>
+
+
+<li>
+<a href="analytics.html">
+<i class="fa-solid fa-chart-line"></i>
+Analytics
+</a>
+</li>
+
+
+<li class="active">
+<a href="achievements.html">
+<i class="fa-solid fa-trophy"></i>
+Achievements
+</a>
+</li>
+
+
+<li>
+<a href="export.html">
+<i class="fa-solid fa-download"></i>
+Export Data
+</a>
+</li>
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+<main class="content">
+
+
+<div class="topbar">
+
+<div>
+
+<h1>
+<i class="fa-solid fa-trophy"></i>
+Achievements
+</h1>
+
+<p>
+Your badges are unlocked based on your actual wellness activity.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<section class="achievement-progress">
+
+
+<div class="progress-title">
+
+<span>
+Overall Progress
+</span>
+
+
+<span id="progressText">
+0 / 6 Achievements
+</span>
+
+
+</div>
+
+
+
+<div class="progress-bar">
+
+<div class="progress-fill" id="progressFill"></div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="achievement-grid">
+
+
+
+<div class="achievement-card locked" id="streakAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>
+7 Day Streak
+</h3>
+
+<p>
+Complete daily check-in for seven consecutive days.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="achievement-card locked" id="sleepAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-bed"></i>
+
+<h3>
+Healthy Sleeper
+</h3>
+
+<p>
+Sleep at least 7 hours for five check-ins.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="achievement-card locked" id="stressAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>
+Stress Master
+</h3>
+
+<p>
+Maintain stress level below 4 for ten days.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="achievement-card locked" id="studyAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-book-open"></i>
+
+<h3>
+Study Champion
+</h3>
+
+<p>
+Study more than 4 hours for seven days.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="achievement-card locked" id="moodAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3>
+Positive Mind
+</h3>
+
+<p>
+Record happy mood for seven days.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="achievement-card locked" id="wellnessAchievement">
+
+<span class="badge-status">
+Locked
+</span>
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>
+Wellness Hero
+</h3>
+
+<p>
+Complete thirty daily check-ins.
+</p>
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="summary-box">
+
+
+<h2>
+Achievement Summary
+</h2>
+
+
+<ul>
+
+
+<li>
+🏆 Total Achievements :
+<strong id="totalAchievements">
+6
+</strong>
+</li>
+
+
+
+<li>
+✅ Earned :
+<strong id="earnedCount">
+0
+</strong>
+</li>
+
+
+
+<li>
+🔒 Locked :
+<strong id="lockedCount">
+6
+</strong>
+</li>
+
+
+
+<li>
+⭐ Progress :
+<strong id="percentage">
+0%
+</strong>
+</li>
+
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+<script src="js/achievement.js"></script>
+
+
+</body>
+
+</html>

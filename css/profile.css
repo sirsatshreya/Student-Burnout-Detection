@@ -1,0 +1,216 @@
+/* ===========================
+   PROFILE PAGE
+=========================== */
+
+.container{
+    min-height:100vh;
+    display:flex;
+    background:#F8FAFC;
+}
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.left{
+    width:50%;
+    padding:60px;
+    background:linear-gradient(135deg,#4F46E5,#6366F1);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.logo i{
+    font-size:35px;
+    color:#4F46E5;
+}
+
+.left h1{
+    font-size:40px;
+    line-height:1.3;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:16px;
+    line-height:1.8;
+    opacity:.95;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:18px 0;
+}
+
+.box{
+    width:45px;
+    height:45px;
+    background:rgba(255,255,255,.2);
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box i{
+    font-size:20px;
+}
+
+.feature span{
+    font-size:16px;
+    font-weight:500;
+}
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+    background:white;
+}
+
+#profileForm{
+    width:100%;
+    max-width:460px;
+}
+
+.right h2{
+    font-size:34px;
+    color:#0F172A;
+    margin-bottom:10px;
+}
+
+.sub{
+    color:#64748B;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:18px;
+    font-weight:600;
+    color:#334155;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px;
+    border:1px solid #CBD5E1;
+    border-radius:12px;
+    font-size:15px;
+    margin-bottom:5px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#4F46E5;
+    box-shadow:0 0 0 4px rgba(79,70,229,.15);
+}
+
+button{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#4F46E5;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3730A3;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+    padding:40px 30px;
+}
+
+.left{
+    text-align:center;
+}
+
+.feature{
+    justify-content:center;
+}
+
+.logo{
+    margin:0 auto 30px;
+}
+
+.left h1{
+    font-size:32px;
+}
+
+.right h2{
+    font-size:30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.left,
+.right{
+    padding:25px;
+}
+
+.left h1{
+    font-size:28px;
+}
+
+.right h2{
+    font-size:26px;
+}
+
+}

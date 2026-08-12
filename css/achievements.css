@@ -1,0 +1,427 @@
+/* =========================================
+   ACHIEVEMENTS PAGE
+========================================= */
+
+
+.content{
+
+    padding:35px;
+
+}
+
+
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.topbar h1{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:32px;
+    color:#0F172A;
+
+}
+
+
+.topbar h1 i{
+
+    color:#4F46E5;
+
+}
+
+
+.topbar p{
+
+    color:#64748B;
+    margin-top:8px;
+
+}
+
+
+
+
+
+/* =========================================
+   PROGRESS SECTION
+========================================= */
+
+
+.achievement-progress{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    margin:30px 0;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.progress-title{
+
+    display:flex;
+    justify-content:space-between;
+    font-weight:600;
+    color:#334155;
+    margin-bottom:12px;
+
+}
+
+
+
+.progress-bar{
+
+    width:100%;
+    height:14px;
+    background:#E2E8F0;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+
+
+.progress-fill{
+
+    height:100%;
+    width:0%;
+    background:linear-gradient(
+        90deg,
+        #4F46E5,
+        #7C3AED
+    );
+
+    border-radius:30px;
+    transition:.6s;
+
+}
+
+
+
+
+
+/* =========================================
+   GRID
+========================================= */
+
+
+.achievement-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+
+}
+
+
+
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+
+.achievement-card{
+
+    background:white;
+    padding:30px 25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+
+}
+
+
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.achievement-card i{
+
+    font-size:45px;
+    color:#4F46E5;
+    margin-bottom:18px;
+
+}
+
+
+
+.achievement-card h3{
+
+    font-size:20px;
+    color:#0F172A;
+    margin-bottom:12px;
+
+}
+
+
+
+.achievement-card p{
+
+    color:#64748B;
+    line-height:1.7;
+    font-size:14px;
+
+}
+
+
+
+
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+
+.badge-status{
+
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+    font-weight:600;
+
+    background:#94A3B8;
+    color:white;
+
+}
+
+
+
+
+
+/* =========================================
+   LOCKED CARD
+========================================= */
+
+
+.locked{
+
+    opacity:.6;
+    filter:grayscale(.5);
+
+}
+
+
+.locked i{
+
+    color:#94A3B8;
+
+}
+
+
+
+
+
+/* =========================================
+   UNLOCKED CARD
+========================================= */
+
+
+.unlocked{
+
+    border:2px solid #4F46E5;
+
+}
+
+
+
+.unlocked .badge-status{
+
+    background:#22C55E;
+
+}
+
+
+
+.unlocked i{
+
+    color:#22C55E;
+
+}
+
+
+
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+
+.summary-box{
+
+    margin-top:40px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.summary-box h2{
+
+    color:#0F172A;
+    margin-bottom:20px;
+
+}
+
+
+
+.summary-box ul{
+
+    list-style:none;
+
+}
+
+
+
+.summary-box li{
+
+    padding:12px 0;
+
+    color:#475569;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+
+
+.summary-box strong{
+
+    color:#4F46E5;
+
+}
+
+
+
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+
+.dark-mode .achievement-progress,
+.dark-mode .achievement-card,
+.dark-mode .summary-box{
+
+    background:#1E293B;
+
+}
+
+
+
+.dark-mode .topbar h1,
+.dark-mode .achievement-card h3,
+.dark-mode .summary-box h2{
+
+    color:white;
+
+}
+
+
+
+.dark-mode .topbar p,
+.dark-mode .achievement-card p,
+.dark-mode .summary-box li{
+
+    color:#CBD5E1;
+
+}
+
+
+
+.dark-mode .progress-title{
+
+    color:white;
+
+}
+
+
+
+.dark-mode .progress-bar{
+
+    background:#334155;
+
+}
+
+
+
+.dark-mode .summary-box li{
+
+    border-color:#334155;
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+
+@media(max-width:768px){
+
+
+.content{
+
+    padding:20px;
+
+}
+
+
+
+.achievement-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.topbar h1{
+
+    font-size:26px;
+
+}
+
+
+
+.achievement-progress{
+
+    padding:20px;
+
+}
+
+
+}
